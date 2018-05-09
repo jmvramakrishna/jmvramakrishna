@@ -1,0 +1,15 @@
+<!-- 1. If you want to use Ajax tool kit first include Connection.js file in the VF Page  
+     2. Pass the session to sforce.connection.sessionId 
+        a. Same ogranization  : {! GETSESSIONID }
+        b. external organization : sforce.connection.login(username,password+securityToken);
+-->
+
+<apex:page >
+   <script src="/soap/ajax/38.0/connection.js" type="text/javascript"></script>
+          <script>
+                sforce.connection.sessionId='{!GETSESSIONID()}';
+                alert(sforce.connection.sessionId);
+/*              var result=sforce.connection.login('salesforce.jmvrk@gmail.com','fo6jnWLuWbmazUaqQHCgF2Vfm');
+              alert(result); */
+          </script>
+</apex:page>

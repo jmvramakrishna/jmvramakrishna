@@ -1,0 +1,7 @@
+<aura:component >	
+	<ui:inputNumber label="Amount" placeholder="0" /><br/>
+    <ui:inputText label="Enter Name" placeholder="FirstName,Last" /><br/>
+    <ui:inputCurrency label="Salary " /> <br/>
+    <ui:inputDate label="Date" displayDatePicker="true"/>
+    <ui:button label="Submit" />
+</aura:component>

@@ -1,0 +1,9 @@
+<aura:component >
+    <h1>Address : </h1>
+	<div>
+        Location : Ameerpet <br/>
+        City	 : Hyderabad <br/>
+        State    : TG
+        PIN		 : 500012
+    </div>
+</aura:component>

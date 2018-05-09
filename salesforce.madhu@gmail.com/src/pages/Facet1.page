@@ -1,0 +1,25 @@
+<!-- For this example to render properly, you must associate the Visualforce page
+with a valid account record in the URL.
+For example, if 001D000000IRt53 is the account ID, the resulting URL should be:
+https://Salesforce_instance/apex/myPage?id=001D000000IRt53
+See the Visualforce Developer's Guide Quick Start Tutorial for more information. -->
+
+<!-- Shows a two column table of contacts associated with the account.
+The account column headers are controlled by the facets.-->
+
+<apex:page standardController="Account">
+    <apex:pageBlock title="Contacts">
+        <apex:dataTable value="{!account.Contacts}" var="contact" cellPadding="4" border="1">
+            <apex:column >
+                <apex:facet name="header">Name</apex:facet>
+                <apex:facet name="footer">Total</apex:facet>
+                        {!contact.Name}
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">Phone</apex:facet>
+                <apex:facet name="footer">"!contacts.size()"</apex:facet>
+                        {!contact.Phone}
+            </apex:column>
+        </apex:dataTable>
+    </apex:pageBlock>
+</apex:page>

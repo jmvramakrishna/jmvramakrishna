@@ -1,0 +1,5 @@
+<aura:component >
+	<aura:iteration items="10,20,30,40" var="a">
+        Value :{! a} <br/>
+    </aura:iteration>
+</aura:component>

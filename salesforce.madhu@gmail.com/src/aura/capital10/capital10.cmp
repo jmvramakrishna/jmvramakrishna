@@ -1,0 +1,5 @@
+<aura:component controller="AuraExample1" access="global">
+	<aura:attribute name="empName" type="string" />
+    <ui:button label="Get EmpData" press="{!c.show}"/>
+    <h1>Employee Name :{! v.empName} </h1>
+</aura:component>

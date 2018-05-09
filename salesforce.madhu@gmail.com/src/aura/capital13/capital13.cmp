@@ -1,0 +1,8 @@
+<aura:component >
+    <ui:inputText label="Enter Name"  aura:id="name" /> <br/>
+    <aura:attribute Name="myName" type="string" />
+    <div> 
+    	Employee Name  :{!v.myName}
+    </div>
+   <ui:button label="submit" press="{!c.callme}" />
+</aura:component>

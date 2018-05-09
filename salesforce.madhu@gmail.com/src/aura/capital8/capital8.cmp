@@ -1,0 +1,6 @@
+<aura:component >
+    <aura:attribute name="marks" type="Integer[]" />
+    <aura:iteration items="{!v.marks}" var="val">
+        Marks :{!val} <br/>
+    </aura:iteration>
+</aura:component>

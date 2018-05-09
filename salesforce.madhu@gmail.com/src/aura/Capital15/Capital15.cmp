@@ -1,0 +1,8 @@
+<aura:component controller="Lightning_Callout" access="global">
+    <aura:attribute name="address" type="string" />
+    <ui:inputText label="pncd" placeHolder="Enter your Pincode" aura:id="txt"/>
+    <ui:button label="Enter" press="{!c.gtpncd}" />
+    <div>
+        JSON response : {!v.address}
+    </div>
+</aura:component>

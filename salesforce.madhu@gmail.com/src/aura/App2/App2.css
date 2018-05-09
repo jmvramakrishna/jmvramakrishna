@@ -1,0 +1,18 @@
+.THIS {
+    	background-color:yellow;
+    	padding-top : 40px;
+    	padding-left :40px;
+	    color: black;
+}
+
+.THIS.red{
+    	background-color: red;
+}
+
+.THIS.blue{
+    	background-color: blue;
+}
+
+.THIS.green{
+    	background-color: green;
+}

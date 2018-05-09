@@ -1,0 +1,9 @@
+<aura:component >
+    <aura:attribute name="names" type="String[]" />
+    <aura:handler name="init" value="{!this}" action="{!c.show}" />
+    <div>
+    	<aura:iteration items="{!v.names}" var="emp">
+        	<h1> Employee Name : {!emp}</h1>
+        </aura:iteration>
+    </div>
+</aura:component>

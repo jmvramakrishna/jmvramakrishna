@@ -1,0 +1,16 @@
+<apex:page >
+    <apex:includeScript value="{!$Resource.jQueryMinJs}"/>
+    <apex:includeScript value="{!$Resource.jQueryDataTablesMinJs}" />
+     <apex:includeScript value="{!$Resource.jQueryDataTablesCss}" />
+     <script>
+        var j$=jQuery.noConflict();
+        /* 
+            if(j$){
+                alert('success');
+            }
+        */
+        j$(document).ready(function(){
+            alert('This is a test page ');
+        });
+     </script>
+</apex:page>

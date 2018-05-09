@@ -1,0 +1,9 @@
+<aura:component controller="AuraExample2" access="global">
+	<aura:attribute name="Accounts" type="Account[]" />
+    <ui:button label="Get Accounts" press="{!c.getAccs}"/>  
+	<div>
+    	<aura:iteration var="a" items="{!v.Accounts}">
+    		<h1>{!a.Name} : {!a.Id} : {!a.Phone} : {!a.Industry}</h1>
+    	</aura:iteration>
+    </div>
+</aura:component>

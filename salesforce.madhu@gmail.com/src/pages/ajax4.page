@@ -1,0 +1,22 @@
+<apex:page id="page">
+    <script src="/soap/ajax/38.0/connection.js" type="text/javascript">
+    </script>
+    <script>
+        function show(){
+            sforce.connection.sessionId='{! GETSESSIONID()}';
+            var name=document.getElementById('page:fm:accName').value;
+            var phone=document.getElementById('page:fm:accPhone').value;
+            var acc=new sforce.SObject('Account');
+            acc.Name=name;
+            acc.Phone=phone;
+            var result=sforce.connection.create([acc]);
+            document.getElementById('page:fm:res').innerHTML=result;
+        }
+     </script>
+     <apex:form id="fm">
+         Enter Name : <apex:inputText id="accName" /> <br/><br/>
+         Enter Phone:<apex:inputText id="accPhone" /><br/><br/>
+         <apex:commandButton value="Create" onComplete="show()" /><br/><br/>
+         <apex:outputLabel id="res" />
+     </apex:form>
+</apex:page>

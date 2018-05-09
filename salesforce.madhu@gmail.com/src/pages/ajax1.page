@@ -1,0 +1,28 @@
+<apex:page controller="ajax1">
+  <apex:form >
+    <apex:pageBlock >
+      <apex:pageBlockSection >
+          
+        <apex:inputText value="{!stSrch}">
+          <apex:actionSupport event="onkeyup" action="{!action1}"/>
+        </apex:inputText>
+    
+        <apex:selectList size="1" value="{!selectedState}" id="one" >
+	        <apex:selectOptions value="{!stSo}"/>
+        </apex:selectList>
+
+        <apex:inputText value="{!ctSrch}">
+          <apex:actionSupport event="onkeyup" action="{!action2}"/>
+        </apex:inputText>
+          
+        <apex:selectList size="1" value="{!selectedCity}" id="two">
+	        <apex:selectOptions value="{!ctSo}"/>
+            <apex:actionSupport event="onchange" action="{!action2}" reRender="one,two,three" />
+        </apex:selectList>
+
+          <apex:outputLabel value="{!Result}" id="three"/>
+          
+      </apex:pageBlockSection>
+    </apex:pageBlock>
+  </apex:form>
+</apex:page>

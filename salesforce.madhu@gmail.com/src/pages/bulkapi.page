@@ -1,0 +1,14 @@
+<apex:page controller="bulkapi">
+  <apex:form >
+    <apex:pageBlock >
+      <apex:pageBlockSection >
+          <apex:outputLabel value="User Id"/>
+          <apex:inputText value="{!uid}" />
+          <apex:outputLabel value="Password"/>
+          <apex:inputSecret value="{!pswd}"  />
+      </apex:pageBlockSection>
+          <apex:commandButton action="{!submit}" value="Sumbit" />
+          <apex:outputLabel value="{!Result}" rendered="{!rs}" />
+    </apex:pageBlock>
+  </apex:form>
+</apex:page>

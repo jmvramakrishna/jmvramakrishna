@@ -1,0 +1,11 @@
+<aura:component >
+    <aura:attribute name="firstName" type="string" />
+    <aura:attribute name="lastName" type="string" />
+    <ui:inputText label="Enter first Name" aura:id="fname" placeholder="First Name" />
+    <ui:inputText label="Enter last Name" aura:id="lname" placeholder="Last Name" />
+    <ui:button label="Submit" press="c.sub" />
+    <div> 
+        First Name 	: {!v.firstName} <br/>
+        Last Name 	: {!v.lastName} <br/>
+    </div>
+</aura:component>

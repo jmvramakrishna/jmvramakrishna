@@ -1,0 +1,12 @@
+<aura:component >
+    <aura:attribute name="empName" type="string" default="CapitalInfo" />
+    <aura:attribute name="salary" type="Decimal" default="1000" />
+    <aura:attribute name="branch" type="String" required="true" />
+    <aura:attribute name="city" type="string" />
+    <div >
+            Employee Name : {! v.empName} <br/>
+        	Employee Salary:{! v.salary} <br/>
+        	Employee Branch : {! v.branch} <br/>
+            Employee City  :{!v.city}	
+    </div>
+</aura:component>

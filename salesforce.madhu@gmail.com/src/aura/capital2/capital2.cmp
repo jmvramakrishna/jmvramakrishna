@@ -1,0 +1,8 @@
+<aura:component >
+	<div>
+        Name : Satish Myla <br/>
+        Phone: 12344 <br/>
+        Age	 : 31<br/>
+        Qual : MTech<br/>
+    </div>
+</aura:component>
