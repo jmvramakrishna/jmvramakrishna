@@ -1,6 +1,6 @@
 public class AuraExample1 {
     public static string Name{set;get;}
-    //Comment testing list of comps
+    //Comment testing merge1
     public AuraExample1(){Name='Name assigned by Constructor';}
 
     @AuraEnabled
