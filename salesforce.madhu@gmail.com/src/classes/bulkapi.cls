@@ -1,4 +1,6 @@
 public class bulkapi {
+		// testing list of comps
+	
     public string uid {get;set;}
     public string pswd {get;set;}
     public string Result {get;set;}
